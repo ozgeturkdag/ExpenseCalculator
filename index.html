@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+      type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Expense Calculator</h1>
+    <div class="container">
+        <h3 class="greet">Welcome,
+            <input id="user-input" type="text" placeholder="enter your name...">
+        </h3>
+
+        <!-- form area-->
+        <form>
+            <div class="double">
+                <div class="form-field">
+                    <label>Expense:</label>
+                    <input id="name-input" type="text">
+                </div>
+                <div class="form-field">
+                    <label>Price:</label>
+                    <input id="price-input" type="number">
+                </div>
+            </div>
+
+            <div class="double">
+                <div class="form-check-field">
+                    <input id="status-check" type="checkbox">
+                    <label for="status-check">Paid</label>
+                </div>
+                <button id="add-btn">Add</button>
+            </div>
+        </form>
+        
+        <!-- total area -->
+        <div class="sum">
+            Total Expense <span id="sum-info">0</span> &#x20BA;
+        </div>
+
+        <!--  filtering area-->
+        <select>
+            <option value="all">All</option>
+            <option value="paid">Paid</option>
+            <option value="unpaid">Unpaid</option>
+          </select>
+
+        <!--  expenses list-->
+        <div id="list"></div>
+            </div>
+        </div>
+    </div>
+   <script src="main.js"></script> 
+</body>
+</html>
